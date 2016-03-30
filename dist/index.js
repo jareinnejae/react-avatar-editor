@@ -178,7 +178,7 @@
             var imageObj = new Image();
             imageObj.onload = this.handleImageReady.bind(this, imageObj);
             imageObj.onerror = this.props.onLoadFailure;
-            if (!this.isDataURL(imageURL)) imageObj.crossOrigin = 'anonymous';
+            // if (!this.isDataURL(imageURL)) imageObj.crossOrigin = 'anonymous';
             imageObj.src = imageURL;
         },
 
